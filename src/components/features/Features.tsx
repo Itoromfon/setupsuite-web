@@ -136,7 +136,9 @@ const Features = () => {
                     items-center
                     lg:justify-between
                     xl:justify-between
-                    mt-[100px]
+                    mt-[30px]
+                    lg:mt-[100px]
+                    xl:mt-[100px]
                 ">
             <div>
                 <Image 
@@ -241,7 +243,9 @@ const Features = () => {
                     items-center
                     lg:justify-between
                     xl:justify-between
-                    mt-[100px]
+                    mt-[30px]
+                    lg:mt-[100px]
+                    xl:mt-[100px]
                 ">
             <div>
                 <div className="mb-[30px] mt-[50px]">

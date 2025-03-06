@@ -235,7 +235,7 @@ const Navbar = () => {
                 flex 
                 flex-col 
                 items-left 
-                mt-[0px] 
+                mt-[-190px] 
                 space-y-10
               ">
               <Link 
