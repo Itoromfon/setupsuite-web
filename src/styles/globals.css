@@ -1,8 +1,24 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #F1FFF8;
+  --foreground: #FF6F61;
+  --primary: #2A2A2A;
+  --white: #FFFFFF;
+  --border: #2C3E50;
+  --border-bottom: #008080;
+  --hero: #090F1C;
+  --text: #676868;
+  --play: #1ABC9C;
+  --hero2: #181818;
+  --grey: #666666;
+  --greyadd: #000000;
+  --register: #DBF7F2;
+  --register-text: #0C0C0C;
+  --register-event: #272525;
 }
 
 @theme inline {
@@ -24,3 +40,5 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
