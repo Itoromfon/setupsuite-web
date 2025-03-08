@@ -20,6 +20,7 @@
   --register: #DBF7F2;
   --register-text: #0C0C0C;
   --register-event: #272525;
+  --pricing: #8FE3D2;
 }
 
 @theme inline {
@@ -29,17 +30,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
+  background-color: white;
+  z-index: 100;
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
-
-
