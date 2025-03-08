@@ -1,8 +1,6 @@
 import { useState } from "react";
 import Image from "next/image";
-import Link
- from "next/link";
-import { CheckCircle } from "@phosphor-icons/react";
+import Link from "next/link";
 
 const Pricing = () => {
   // State to track whether the toggle is set to "Monthly" or "Yearly"

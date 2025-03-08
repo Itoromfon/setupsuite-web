@@ -40,7 +40,7 @@ const Execute = () => {
                         text-center
                     "
                 >
-                    Whether you're an event planner, organization, or individual, Setup Suite gives you the power to create seamless, well-organized experiences.
+                    Whether you&apos;re an event planner, organization, or individual, Setup Suite gives you the power to create seamless, well-organized experiences.
                 </p>
             </div>
             <div 
