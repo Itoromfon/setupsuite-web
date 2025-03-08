@@ -97,9 +97,14 @@ const Pricing = () => {
                     className="
                       bg-[linear-gradient(180deg,#F2EFEB_0%,#8FE3D2_100%)] 
                       flex
-                      py-6
-                      px-8
+                      flex-col
+                      lg:flex-row
+                      xl:flex-row
+                      py-12
+                      lg:px-12
+                      px-3
                       gap-[30px]
+                      rounded-3xl
                 ">
                     <div 
                       className="
@@ -114,7 +119,8 @@ const Pricing = () => {
                           className="
                             text-[var(--play)] 
                             font-bold
-                            text-4xl
+                            lg:text-4xl
+                            text-[22px]
                             mb-[10px]
                           "
                         >
@@ -124,7 +130,8 @@ const Pricing = () => {
                               text-[var(--greyadd)]
                               ml-4
                               font-medium
-                              text-[17px] 
+                              lg:text-[17px] 
+                              text-[16px]
                             "
                           >
                             /year
@@ -133,7 +140,8 @@ const Pricing = () => {
                         <h3 
                           className="
                             font-medium
-                            text-[28px]
+                            lg:text-[28px]
+                            text-[18px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -225,7 +233,42 @@ const Pricing = () => {
                           </p>
                         </div>
                       </div>
+                      <div 
+                        className="
+                          mt-[250px]
+                          lg:mt-[210px]
+                          xl:mt-[230px]
+                        "
+                      >
+                      <Link 
+                        href="#" 
+                        className="
+                            bg-[var(--foreground)] 
+                            text-[var(--white)] 
+                            px-14
+                            lg:px-10
+                            xl:px-14
+                            text-[14px]
+                            lg:text-[16px]
+                            py-3 
+                            rounded-full 
+                            font-semibold
+                            border
+                            border-[var(--border)]
+                            border-b-5 
+                            border-b-[var(--border-bottom)] 
+                            hover:scale-105 
+                            hover:shadow-lg 
+                            transition-all 
+                            duration-300 
+                            animate-fade-in
+                            "
+                >
+                    Choose plan
+                </Link>
+                </div>
                     </div>
+                    
                     <div 
                       className="
                         bg-[var(--white)]
@@ -233,13 +276,18 @@ const Pricing = () => {
                         pt-[65px]
                         px-12
                         h-[532px]
+                        mb-[20px]
+                        mt-[20px]
+                        lg:mb-[0px]
+                        lg:mt-[0px]
                       ">
                       <div>
                         <h1
                           className="
                             text-[var(--play)] 
                             font-bold
-                            text-4xl
+                            lg:text-4xl
+                            text-[22px]
                             mb-[10px]
                           "
                         >
@@ -249,7 +297,8 @@ const Pricing = () => {
                               text-[var(--greyadd)]
                               ml-4
                               font-medium
-                              text-[17px] 
+                              lg:text-[17px] 
+                              text-[16px]
                             "
                           >
                             /year
@@ -258,7 +307,8 @@ const Pricing = () => {
                         <h3 
                           className="
                             font-medium
-                            text-[28px]
+                            lg:text-[28px]
+                            text-[18px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -391,8 +441,42 @@ const Pricing = () => {
                             Onsite accreditation
                           </p>
                         </div>
+                        
                       </div>
-                    </div>
+                      <div 
+                        className="
+                          lg:mt-[150px]
+                          xl:mt-[170px]
+                          mt-[190px]
+                        ">
+                      <Link 
+                        href="#" 
+                        className="
+                            bg-[var(--foreground)] 
+                            text-[var(--white)] 
+                            px-14
+                            lg:px-10 
+                            xl:px-14 
+                            text-[14px]
+                            lg:text-[16px]
+                            py-3 
+                            rounded-full 
+                            font-semibold
+                            border
+                            border-[var(--border)]
+                            border-b-5 
+                            border-b-[var(--border-bottom)] 
+                            hover:scale-105 
+                            hover:shadow-lg 
+                            transition-all 
+                            duration-300 
+                            animate-fade-in
+                            "
+                >
+                    Choose plan
+                </Link>
+                </div>
+                  </div>
                     <div 
                       className="
                         bg-[var(--white)]
@@ -400,13 +484,15 @@ const Pricing = () => {
                         pt-[65px]
                         px-12
                         h-[532px]
+                        mx-auto
                       ">
                       <div>
                         <h1
                           className="
                             text-[var(--play)] 
                             font-bold
-                            text-4xl
+                            lg:text-4xl
+                            text-[22px]
                             mb-[10px]
                           "
                         >
@@ -416,7 +502,8 @@ const Pricing = () => {
                               text-[var(--greyadd)]
                               ml-4
                               font-medium
-                              text-[17px] 
+                              lg:text-[17px] 
+                              text-[16px]
                             "
                           >
                             /year
@@ -425,7 +512,8 @@ const Pricing = () => {
                         <h3 
                           className="
                             font-medium
-                            text-[28px]
+                            lg:text-[28px]
+                            text-[18px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -583,6 +671,38 @@ const Pricing = () => {
                             Can send 10,000 emails per
                             month 
                           </p>
+                        </div>
+                      <div 
+                        className="
+                          lg:mt-[50px]
+                          mt-[80px]
+                        ">
+                        <Link 
+                          href="/signup" 
+                          className="
+                              bg-[var(--foreground)] 
+                              text-[var(--white)] 
+                              px-14
+                              lg:px-10
+                              xl:px-14
+                              text-[14px]
+                              lg:text-[16px]
+                              py-3 
+                              rounded-full 
+                              font-semibold
+                              border
+                              border-[var(--border)]
+                              border-b-5 
+                              border-b-[var(--border-bottom)] 
+                              hover:scale-105 
+                              hover:shadow-lg 
+                              transition-all 
+                              duration-300 
+                              animate-fade-in
+                              "
+                          >
+                            Choose plan
+                          </Link>
                         </div>
                       </div>
                     </div>
