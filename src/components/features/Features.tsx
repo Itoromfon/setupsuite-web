@@ -5,12 +5,13 @@ import Link from "next/link";
 
 const Features = () => {
     return (
-        <div className="mt-[100px] mx-[50px]">
+        <div className="bg-[var(--white)]">
+        <div className="mt-[80px] mx-[50px]">
             <div 
                 className="
                     lg:text-3xl
                     xl:text-5xl
-                    text-2xl
+                    text-[20px]
                     font-bold
                     text-[var(--hero)]
                     flex 
@@ -18,6 +19,7 @@ const Features = () => {
                     text-center
                     mb-[20px]
                     lg:mb-[100px]
+                    pt-[50px]
                 ">
                 Effortless Events, Exceptional Experiences
             </div>
@@ -42,7 +44,10 @@ const Features = () => {
                         className="
                             bg-[var(--register)] 
                             text-[var(--register-text)] 
-                            px-11 
+                            text-[12px]
+                            lg:text-base
+                            px-7
+                            lg:px-11 
                             py-4 
                             rounded-full 
                             font-semibold
@@ -62,8 +67,8 @@ const Features = () => {
                         font-black
                         xl:text-[56px]
                         lg:text-3xl
-                        text-2xl
-                        w-[330px]
+                        text-[20px]
+                        w-[200px]
                         xl:w-[532px]
                         lg:w-[450px]
                         leading-snug
@@ -77,7 +82,7 @@ const Features = () => {
                         text-[14px]
                         lg:text-[14px]
                         xl:text-[16px]
-                        w-[330px]
+                        w-[270px]
                         lg:w-[450px]
                         leading-normal
                         mb-[50px]
@@ -99,6 +104,8 @@ const Features = () => {
                     px-14
                     lg:px-18 
                     xl:px-18 
+                    text-[14px]
+                    lg:text-[16px]
                     py-3 
                     rounded-full 
                     font-semibold
@@ -117,13 +124,20 @@ const Features = () => {
                 </Link>
                 </div>
             </div>
-            <div>
+            <div 
+              className="
+                w-[310px]
+                lg:w-[541px]
+                flex
+                items-center
+              ">
                 <Image 
-                    src="/images/womenfun.svg"
-                    alt="women going an event"
-                    width={541}
-                    height={678}
-                    className="rounded-2xl"
+                  src="/images/womenfun.svg"
+                  alt="Setup-suite Logo"
+                  width={541}
+                  height={583}
+                  className="rounded-2xl"
+                  layout="responsive"
                 />
             </div>
             </div>
@@ -140,13 +154,20 @@ const Features = () => {
                     lg:mt-[100px]
                     xl:mt-[100px]
                 ">
-            <div>
+            <div 
+              className="
+                w-[310px] 
+                lg:w-[541px]
+                flex
+                items-center
+              ">
                 <Image 
-                    src="/images/photographer.svg"
-                    alt="women going an event"
-                    width={541}
-                    height={612}
-                    className="rounded-2xl"
+                  src="/images/photographer.svg"
+                  alt="Setup-suite Logo"
+                  width={541}
+                  height={583}
+                  className="rounded-2xl"
+                  layout="responsive"
                 />
             </div>
             <div>
@@ -156,7 +177,10 @@ const Features = () => {
                         className="
                             bg-[var(--register)] 
                             text-[var(--register-text)] 
-                            px-11 
+                            text-[12px]
+                            lg:text-base
+                            px-7
+                            lg:px-11 
                             py-4 
                             rounded-full 
                             font-semibold
@@ -176,8 +200,8 @@ const Features = () => {
                         font-black
                         xl:text-[56px]
                         lg:text-3xl
-                        text-2xl
-                        w-[330px]
+                        text-[20px]
+                        w-[200px]
                         xl:w-[532px]
                         lg:w-[450px]
                         leading-snug
@@ -192,7 +216,7 @@ const Features = () => {
                         text-[14px]
                         lg:text-[14px]
                         xl:text-[16px]
-                        w-[330px]
+                        w-[270px]
                         lg:w-[450px]
                         leading-normal
                         mb-[50px]
@@ -215,6 +239,8 @@ const Features = () => {
                     px-14
                     lg:px-18 
                     xl:px-18 
+                    text-[14px]
+                    lg:text-[16px]
                     py-3 
                     rounded-full 
                     font-semibold
@@ -274,8 +300,8 @@ const Features = () => {
                         font-black
                         xl:text-[56px]
                         lg:text-3xl
-                        text-2xl
-                        w-[330px]
+                        text-[20px]
+                        w-[200px]
                         xl:w-[532px]
                         lg:w-[450px]
                         leading-snug
@@ -290,7 +316,7 @@ const Features = () => {
                         text-[14px]
                         lg:text-[14px]
                         xl:text-[16px]
-                        w-[330px]
+                        w-[270px]
                         lg:w-[450px]
                         leading-normal
                         mb-[50px]
@@ -312,6 +338,8 @@ const Features = () => {
                     px-14
                     lg:px-18 
                     xl:px-18 
+                    text-[14px]
+                    lg:text-[16px]
                     py-3 
                     rounded-full 
                     font-semibold
@@ -330,16 +358,24 @@ const Features = () => {
                 </Link>
                 </div>
             </div>
-            <div>
+            <div 
+              className="
+                w-[310px] 
+                lg:w-[541px]
+                flex
+                items-center
+              ">
                 <Image 
-                    src="/images/smartvendor.svg"
-                    alt="women going an event"
-                    width={541}
-                    height={678}
-                    className="rounded-2xl"
+                  src="/images/smartvendor.svg"
+                  alt="Setup-suite Logo"
+                  width={541}
+                  height={583}
+                  layout="responsive"
+                  className="rounded-2xl"
                 />
             </div>
             </div>
+        </div>
         </div>
     )
 }

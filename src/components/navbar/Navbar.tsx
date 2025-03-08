@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="fixed top-0 left-0 w-full bg-[var(--background)] shadow-sm z-50">
+    <nav className="fixed top-0 left-0 w-full bg-[var(--white)] shadow-sm z-50">
       <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8">
         {/* Navbar content - hidden when menu is open */}
         <div className={`flex items-center justify-between h-16 ${isMenuOpen ? 'hidden' : ''}`}>
@@ -54,15 +54,23 @@ const Navbar = () => {
                 </svg>
               </button>
             </div>
-            <Link className='ml-[-6px]' href="/">
-              <Image 
-                src="/images/setup.svg"
-                alt='Setup-suite Logo'
-                width={182}
-                height={100}
-                layout="responsive"
-              />
-            </Link>
+            <div 
+              className="
+                w-[118px] 
+                md:w-[182px]
+                flex
+                items-center
+              ">
+              <Link className="ml-[-6px]" href="/">
+                <Image 
+                  src="/images/setup.svg"
+                  alt="Setup-suite Logo"
+                  width={182}
+                  height={100}
+                  layout="responsive"
+                />
+              </Link>
+            </div>
           </div>
 
           {/* Desktop Menu */}
@@ -181,7 +189,7 @@ const Navbar = () => {
             z-40
           ">
             {/* Logo */}
-            <div 
+            {/* <div 
               className='
               absolute 
               top-0
@@ -199,7 +207,7 @@ const Navbar = () => {
                 alt='logo'
                 layout='responsive'
               />
-            </div>
+            </div> */}
 
             {/* Close Button */}
             <button 

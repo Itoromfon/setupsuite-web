@@ -132,8 +132,7 @@ const Hero = () => {
             className="
                 flex 
                 justify-between
-                m-[50px]
-
+                mx-[50px]
             ">
             <div className="flex">
                 <div className="mt-[8px]">
@@ -347,56 +346,57 @@ const Hero = () => {
                             font-black
                             lg:text-3xl
                             lg:w-[500px]
-                            text-2xl
-                            w-[300px]
+                            text-[20px]
+                            w-[250px]
                             h-[112px]
                             text-center
                             leading-tight
                             text-[var(--hero)] 
+                            mb-[-10px]
                         ">
                             Seamless Event Management, From Start to Finish.
                     </h1>
                 </div>
-                <div 
-                    className="
-                        mt-[1px]
-                        lg:mt-[15px]
-                    ">
-                    <p 
-                    className="
-                        text-[var(--text)]
-                        w-[294px]
-                        h-[102px]
-                        text-center
-                        lg:text-[14px]
-                        lg:w-[330px]
-                        lg:mb-[50px]
-                        text-[11px]
-                        mx-auto
-                        leading-relaxed
-                    ">
-                    Say goodbye to chaos and hello to efficiency. Setup Suite empowers you with smart tools for planning, organizing, and executing flawless events—whether virtual or in-person. From guest management to real-time coordination, we make every detail effortless.
-                    </p>
-                </div>
-                <div 
-                    className="
-                        flex
-                        justify-center
-                        mt-[20px]
-                        gap-[16px]
-                    ">
-                <div>
-                <Link
-                    href="/signup"
-                    className="
+            <div 
+                className="
+                    mt-[1px]
+                    lg:mt-[15px]
+                ">
+                <p 
+                className="
+                    text-[var(--text)]
+                    w-[294px]
+                    h-[102px]
+                    text-center
+                    lg:text-[14px]
+                    lg:w-[330px]
+                    lg:mb-[50px]
+                    text-[11px]
+                    mx-auto
+                    leading-relaxed
+                ">
+                Say goodbye to chaos and hello to efficiency. Setup Suite empowers you with smart tools for planning, organizing, and executing flawless events—whether virtual or in-person. From guest management to real-time coordination, we make every detail effortless.
+                </p>
+            </div>
+            <div 
+                className="
                     flex
-                    items-center
-                    group
-                    animate-slide-up
+                    justify-center
+                    mt-[20px]
+                    gap-[16px]
+                ">
+            <div>
+            <Link
+                href="/signup"
+                className="
+                flex
+                items-center
+                group
+                animate-slide-up
             "
             >
             <PlayCircle
-                size={20}
+                size={18}
                 color="var(--play)"
                 className="group-hover:animate-pulse transition-all duration-600"
             />
@@ -404,7 +404,8 @@ const Hero = () => {
                 className="
                 text-[var(--play)]
                 mx-1
-                text-base
+                text-[12px]
+                lg:text-base
                 group-hover:translate-x-2 
                 transition-all 
                 duration-600
@@ -420,9 +421,12 @@ const Hero = () => {
                     className="
                         bg-[var(--foreground)] 
                         text-[var(--white)] 
-                        text-[14px]
-                        px-8 
-                        py-2 
+                        text-[12px]
+                        lg:text-[14px]
+                        px-6
+                        py-1
+                        lg:px-8 
+                        lg:py-2 
                         rounded-full 
                         font-semibold
                         border
@@ -446,7 +450,7 @@ const Hero = () => {
                     flex
                     justify-center
                     lg:justify-around
-                    mx-[50px]
+                    
                     mt-[50px]
                     mb-[25px]
                 "
@@ -455,7 +459,12 @@ const Hero = () => {
                 className="
                     flex
                 ">
-                <div className="mt-[8px]">
+                <div 
+                    className="
+                        mt-[8px]
+                        w-[29px]
+                        md:w-[53px]
+                    ">
                     <Image 
                         src="/images/seam.svg"
                         alt="Seam"
@@ -463,7 +472,7 @@ const Hero = () => {
                         height={53}
                     />
                 </div>
-                <div className="ml-[12px]">
+                <div className="ml-[3px] lg:ml-[12px]">
                     <h1 
                         className="
                         font-black
@@ -479,14 +488,14 @@ const Hero = () => {
                             text-[var(--grey)]
                             text-[10px]
                             lg:text-[12px]
-                            lg:w-[200px]
                             font-semibold
                             leading-none
-                            w-[140px]
                             mb-2
+                            w-[120px]
+                            lg:w-[200px]
                         "
                     >
-                        Manage Your Audience with Ease
+                        Effortless Planning & Execution
                     </h3>
                     <p
                         className="
@@ -495,17 +504,23 @@ const Hero = () => {
                             lg:text-[10px]
                             font-normal
                             leading-none
+                            w-[125px]
                             lg:w-[250px]
-                            w-[148px]
-                            h-[]
                         "
                     >
-                        Prevent overcrowding, enhance engagement, and create a safe, organized event.
+                        Say goodbye to chaos! Our streamlined tools ensure every event detail is managed smoothly.
+
                     </p>
                 </div>
             </div>
             <div className="flex">
-                <div className="mt-[8px]">
+                <div 
+                   className="
+                   mt-[8px]
+                   w-[29px]
+                   md:w-[53px]
+               ">
+                
                     <Image 
                         src="/images/sma.svg"
                         alt="Seam"
@@ -513,7 +528,7 @@ const Hero = () => {
                         height={53}
                     />
                 </div>
-                <div className="ml-[12px]">
+                <div className="ml-[3px] lg:ml-[12px]">
                     <h1 
                         className="
                         font-black
@@ -529,12 +544,12 @@ const Hero = () => {
                             lg:text-[12px]
                             font-semibold
                             leading-none
-                            w-[140px]
-                            lg:w-[200px]
                             mb-2
+                            w-[120px]
+                            lg:w-[200px]
                         "
                     >
-                        Manage Your Audience with Ease
+                        Data-Driven Success
                     </h3>
                     <p
                         className="
@@ -543,12 +558,12 @@ const Hero = () => {
                             lg:text-[10px]
                             font-normal
                             leading-none
-                            w-[148px]
+                            w-[125px]
                             lg:w-[250px]
-                            h-[]
                         "
                     >
-                        Prevent overcrowding, enhance engagement, and create a safe, organized event.
+                        Leverage intelligent insights to optimize event marketing, sales, and guest experience.
+
                     </p>
                 </div>
             </div>
@@ -558,11 +573,16 @@ const Hero = () => {
                     flex
                     justify-center
                     lg:justify-around
-                    mx-[50px]
                 "
             >
             <div className="flex">
-                <div className="mt-[8px]">
+                <div 
+                    className="
+                    mt-[8px]
+                    w-[29px]
+                    md:w-[53px]
+                ">
+                    
                     <Image 
                         src="/images/sma.svg"
                         alt="Seam"
@@ -570,7 +590,7 @@ const Hero = () => {
                         height={53}
                     />
                 </div>
-                <div className="ml-[12px]">
+                <div className="ml-[3px] lg:ml-[12px]">
                     <h1 
                         className="
                         font-black
@@ -586,12 +606,12 @@ const Hero = () => {
                             lg:text-[12px]
                             font-semibold
                             leading-none
-                            w-[140px]
-                            lg:w-[200px]
                             mb-2
+                            w-[120px]
+                            lg:w-[200px]
                         "
                     >
-                        Manage Your Audience with Ease
+                        Automated & Hassle-Free
                     </h3>
                     <p
                         className="
@@ -600,17 +620,22 @@ const Hero = () => {
                             lg:text-[10px]
                             font-normal
                             leading-none
-                            w-[148px]
+                            w-[125px]
                             lg:w-[250px]
-                            h-[]
                         "
                     >
-                        Prevent overcrowding, enhance engagement, and create a safe, organized event.
+                        From check-ins to crowd control, our system takes the burden off your shoulders.
+
                     </p>
                 </div>
             </div>
             <div className="flex">
-                <div className="mt-[8px]">
+                <div 
+                    className="
+                        mt-[8px]
+                        w-[29px]
+                        md:w-[53px]
+                    ">
                     <Image 
                         src="/images/seam.svg"
                         alt="Seam"
@@ -618,12 +643,12 @@ const Hero = () => {
                         height={53}
                     />
                 </div>
-                <div className="ml-[12px]">
+                <div className="ml-[3px] lg:ml-[12px]">
                     <h1 
                         className="
                         font-black
                         text-[var(--hero2)]
-                        text-[14px]
+                        text-[13px]
                         lg:text-[16px]
                         leading-normal
                     ">
@@ -637,7 +662,7 @@ const Hero = () => {
                             font-semibold
                             leading-none
                             mb-2
-                            w-[140px]
+                            w-[120px]
                             lg:w-[200px]
                         "
                     >
@@ -650,9 +675,8 @@ const Hero = () => {
                             lg:text-[10px]
                             font-normal
                             leading-none
-                            w-[148px]
+                            w-[125px]
                             lg:w-[250px]
-                            h-[]
                         "
                     >
                         Prevent overcrowding, enhance engagement, and create a safe, organized event.
