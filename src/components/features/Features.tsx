@@ -126,7 +126,7 @@ const Features = () => {
             </div>
             <div 
               className="
-                w-[350px]
+                w-[369px]
                 lg:w-[541px]
                 flex
                 items-center
@@ -156,7 +156,7 @@ const Features = () => {
                 ">
             <div 
               className="
-                w-[350px] 
+                w-[369px] 
                 lg:w-[541px]
                 flex
                 items-center
@@ -363,7 +363,7 @@ const Features = () => {
             </div>
             <div 
               className="
-                w-[350px] 
+                w-[369px] 
                 lg:w-[541px]
                 flex
                 items-center
