@@ -5,11 +5,11 @@ import { PlayCircle } from "@phosphor-icons/react";
 const Hero = () => {
     return (
     <>
-    <div className="bg-[var(--background)] hidden xl:block">
+    <div className="hidden xl:block">
         <div 
             className="
                 flex 
-                mt-[120px] 
+                pt-[120px]
                 justify-between
                 mx-[50px]
             "
@@ -312,7 +312,7 @@ const Hero = () => {
         className="
             block 
             xl:hidden
-            mt-[110px]
+            pt-[110px]
         "
         >
         <div 
@@ -346,13 +346,13 @@ const Hero = () => {
                             font-black
                             lg:text-3xl
                             lg:w-[500px]
-                            text-[20px]
-                            w-[250px]
+                            text-[32px]
+                            w-[381px]
                             h-[112px]
                             text-center
                             leading-tight
                             text-[var(--hero)] 
-                            mb-[-10px]
+                            mb-[10px]
                         ">
                             Seamless Event Management, From Start to Finish.
                     </h1>
@@ -404,7 +404,7 @@ const Hero = () => {
                 className="
                 text-[var(--play)]
                 mx-1
-                text-[12px]
+                text-[14px]
                 lg:text-base
                 group-hover:translate-x-2 
                 transition-all 
@@ -421,7 +421,7 @@ const Hero = () => {
                     className="
                         bg-[var(--foreground)] 
                         text-[var(--white)] 
-                        text-[12px]
+                        text-[16px]
                         lg:text-[14px]
                         px-6
                         py-1
@@ -445,6 +445,31 @@ const Hero = () => {
                 </div>
             </div>
             </div>
+            <div 
+            className="
+                flex
+                justify-between
+                mx-[50px]
+                mt-[60px]
+            "
+        >
+            <div>
+                <Image 
+                    src="/images/swagcall.svg"
+                    alt="Seam"
+                    width={75}
+                    height={54}
+                />
+            </div>
+            <div>
+            <Image 
+                src="/images/fashion.svg"
+                alt="Seam"
+                width={75}
+                height={55}
+                />
+            </div>
+        </div>
             <div 
                 className="
                     flex

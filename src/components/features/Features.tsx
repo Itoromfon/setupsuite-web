@@ -5,13 +5,13 @@ import Link from "next/link";
 
 const Features = () => {
     return (
-        <div className="bg-[var(--white)]">
+        <div>
         <div className="mt-[80px] mx-[50px]">
             <div 
                 className="
                     lg:text-3xl
                     xl:text-5xl
-                    text-[20px]
+                    text-[18px]
                     font-bold
                     text-[var(--hero)]
                     flex 
@@ -67,8 +67,8 @@ const Features = () => {
                         font-black
                         xl:text-[56px]
                         lg:text-3xl
-                        text-[20px]
-                        w-[200px]
+                        text-[28px]
+                        w-[348px]
                         xl:w-[532px]
                         lg:w-[450px]
                         leading-snug
@@ -82,7 +82,7 @@ const Features = () => {
                         text-[14px]
                         lg:text-[14px]
                         xl:text-[16px]
-                        w-[270px]
+                        w-[327px]
                         lg:w-[450px]
                         leading-normal
                         mb-[50px]
@@ -126,7 +126,7 @@ const Features = () => {
             </div>
             <div 
               className="
-                w-[310px]
+                w-[350px]
                 lg:w-[541px]
                 flex
                 items-center
@@ -156,7 +156,7 @@ const Features = () => {
                 ">
             <div 
               className="
-                w-[310px] 
+                w-[350px] 
                 lg:w-[541px]
                 flex
                 items-center
@@ -200,8 +200,8 @@ const Features = () => {
                         font-black
                         xl:text-[56px]
                         lg:text-3xl
-                        text-[20px]
-                        w-[200px]
+                        text-[28px]
+                        w-[348px]
                         xl:w-[532px]
                         lg:w-[450px]
                         leading-snug
@@ -216,7 +216,7 @@ const Features = () => {
                         text-[14px]
                         lg:text-[14px]
                         xl:text-[16px]
-                        w-[270px]
+                        w-[327px]
                         lg:w-[450px]
                         leading-normal
                         mb-[50px]
@@ -280,7 +280,10 @@ const Features = () => {
                         className="
                             bg-[var(--register)] 
                             text-[var(--register-text)] 
-                            px-11 
+                            text-[12px]
+                            lg:text-base
+                            px-7
+                            lg:px-11 
                             py-4 
                             rounded-full 
                             font-semibold
@@ -300,8 +303,8 @@ const Features = () => {
                         font-black
                         xl:text-[56px]
                         lg:text-3xl
-                        text-[20px]
-                        w-[200px]
+                        text-[28px]
+                        w-[348px]
                         xl:w-[532px]
                         lg:w-[450px]
                         leading-snug
@@ -316,7 +319,7 @@ const Features = () => {
                         text-[14px]
                         lg:text-[14px]
                         xl:text-[16px]
-                        w-[270px]
+                        w-[327px]
                         lg:w-[450px]
                         leading-normal
                         mb-[50px]
@@ -360,7 +363,7 @@ const Features = () => {
             </div>
             <div 
               className="
-                w-[310px] 
+                w-[350px] 
                 lg:w-[541px]
                 flex
                 items-center

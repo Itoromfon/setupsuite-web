@@ -29,7 +29,7 @@ const Pricing = () => {
         <div className="lg:mt-[-110px] mt-[-90px]">
         <h1 
             className="
-                text-[15px]
+                text-[20px]
                 lg:text-[40px]
                 mr-4
                 font-normal
@@ -82,7 +82,7 @@ const Pricing = () => {
             text-[var(--greys)]
             font-md
             lg:w-[584px]
-            w-[240px]
+            w-[350px]
             mb-8
           "
         >
@@ -120,7 +120,7 @@ const Pricing = () => {
                             text-[var(--play)] 
                             font-bold
                             lg:text-4xl
-                            text-[22px]
+                            text-[36px]
                             mb-[10px]
                           "
                         >
@@ -131,7 +131,7 @@ const Pricing = () => {
                               ml-4
                               font-medium
                               lg:text-[17px] 
-                              text-[16px]
+                              text-[17px]
                             "
                           >
                             /year
@@ -141,7 +141,7 @@ const Pricing = () => {
                           className="
                             font-medium
                             lg:text-[28px]
-                            text-[18px]
+                            text-[28px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -235,9 +235,11 @@ const Pricing = () => {
                       </div>
                       <div 
                         className="
-                          mt-[250px]
-                          lg:mt-[210px]
-                          xl:mt-[230px]
+                          mt-[200px]
+                          lg:mt-[200px]
+                          xl:mt-[220px]
+                          flex
+                          justify-center
                         "
                       >
                       <Link 
@@ -248,7 +250,7 @@ const Pricing = () => {
                             px-14
                             lg:px-10
                             xl:px-14
-                            text-[14px]
+                            text-[16px]
                             lg:text-[16px]
                             py-3 
                             rounded-full 
@@ -287,7 +289,7 @@ const Pricing = () => {
                             text-[var(--play)] 
                             font-bold
                             lg:text-4xl
-                            text-[22px]
+                            text-[36px]
                             mb-[10px]
                           "
                         >
@@ -298,7 +300,7 @@ const Pricing = () => {
                               ml-4
                               font-medium
                               lg:text-[17px] 
-                              text-[16px]
+                              text-[17px]
                             "
                           >
                             /year
@@ -308,7 +310,7 @@ const Pricing = () => {
                           className="
                             font-medium
                             lg:text-[28px]
-                            text-[18px]
+                            text-[28px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -445,9 +447,11 @@ const Pricing = () => {
                       </div>
                       <div 
                         className="
-                          lg:mt-[150px]
-                          xl:mt-[170px]
-                          mt-[190px]
+                          lg:mt-[140px]
+                          xl:mt-[160px]
+                          mt-[140px]
+                          flex
+                          justify-center
                         ">
                       <Link 
                         href="#" 
@@ -457,7 +461,7 @@ const Pricing = () => {
                             px-14
                             lg:px-10 
                             xl:px-14 
-                            text-[14px]
+                            text-[16px]
                             lg:text-[16px]
                             py-3 
                             rounded-full 
@@ -492,7 +496,7 @@ const Pricing = () => {
                             text-[var(--play)] 
                             font-bold
                             lg:text-4xl
-                            text-[22px]
+                            text-[36px]
                             mb-[10px]
                           "
                         >
@@ -503,7 +507,7 @@ const Pricing = () => {
                               ml-4
                               font-medium
                               lg:text-[17px] 
-                              text-[16px]
+                              text-[17px]
                             "
                           >
                             /year
@@ -513,7 +517,7 @@ const Pricing = () => {
                           className="
                             font-medium
                             lg:text-[28px]
-                            text-[18px]
+                            text-[28px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -674,8 +678,10 @@ const Pricing = () => {
                         </div>
                       <div 
                         className="
-                          lg:mt-[50px]
-                          mt-[80px]
+                          lg:mt-[40px]
+                          mt-[30px]
+                          flex
+                          justify-center
                         ">
                         <Link 
                           href="/signup" 
@@ -685,7 +691,7 @@ const Pricing = () => {
                               px-14
                               lg:px-10
                               xl:px-14
-                              text-[14px]
+                              text-[16px]
                               lg:text-[16px]
                               py-3 
                               rounded-full 
@@ -737,7 +743,7 @@ const Pricing = () => {
                             text-[var(--play)] 
                             font-bold
                             lg:text-4xl
-                            text-[22px]
+                            text-[36px]
                             mb-[10px]
                           "
                         >
@@ -748,7 +754,7 @@ const Pricing = () => {
                               ml-4
                               font-medium
                               lg:text-[17px] 
-                              text-[16px]
+                              text-[17px]
                             "
                           >
                             /month
@@ -758,7 +764,7 @@ const Pricing = () => {
                           className="
                             font-medium
                             lg:text-[28px]
-                            text-[18px]
+                            text-[28px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -852,9 +858,11 @@ const Pricing = () => {
                       </div>
                       <div 
                         className="
-                          mt-[250px]
-                          lg:mt-[210px]
-                          xl:mt-[230px]
+                          mt-[200px]
+                          lg:mt-[200px]
+                          xl:mt-[220px]
+                          flex
+                          justify-center
                         "
                       >
                       <Link 
@@ -865,7 +873,7 @@ const Pricing = () => {
                             px-14
                             lg:px-10
                             xl:px-14
-                            text-[14px]
+                            text-[16px]
                             lg:text-[16px]
                             py-3 
                             rounded-full 
@@ -904,7 +912,7 @@ const Pricing = () => {
                             text-[var(--play)] 
                             font-bold
                             lg:text-4xl
-                            text-[22px]
+                            text-[36px]
                             mb-[10px]
                           "
                         >
@@ -915,7 +923,7 @@ const Pricing = () => {
                               ml-4
                               font-medium
                               lg:text-[17px] 
-                              text-[16px]
+                              text-[17px]
                             "
                           >
                             /month
@@ -925,7 +933,7 @@ const Pricing = () => {
                           className="
                             font-medium
                             lg:text-[28px]
-                            text-[18px]
+                            text-[28px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -1062,9 +1070,11 @@ const Pricing = () => {
                       </div>
                       <div 
                         className="
-                          lg:mt-[150px]
-                          xl:mt-[170px]
-                          mt-[190px]
+                          lg:mt-[140px]
+                          xl:mt-[160px]
+                          mt-[140px]
+                          flex
+                          justify-center
                         ">
                       <Link 
                         href="#" 
@@ -1074,7 +1084,7 @@ const Pricing = () => {
                             px-14
                             lg:px-10 
                             xl:px-14 
-                            text-[14px]
+                            text-[16px]
                             lg:text-[16px]
                             py-3 
                             rounded-full 
@@ -1109,7 +1119,7 @@ const Pricing = () => {
                             text-[var(--play)] 
                             font-bold
                             lg:text-4xl
-                            text-[22px]
+                            text-[36px]
                             mb-[10px]
                           "
                         >
@@ -1120,7 +1130,7 @@ const Pricing = () => {
                               ml-4
                               font-medium
                               lg:text-[17px] 
-                              text-[16px]
+                              text-[17px]
                             "
                           >
                             /month
@@ -1130,7 +1140,7 @@ const Pricing = () => {
                           className="
                             font-medium
                             lg:text-[28px]
-                            text-[18px]
+                            text-[28px]
                             text-[var(--play)] 
                             mb-[15px]
                           "
@@ -1291,8 +1301,10 @@ const Pricing = () => {
                         </div>
                       <div 
                         className="
-                          lg:mt-[50px]
-                          mt-[80px]
+                          lg:mt-[40px]
+                          mt-[30px]
+                          flex
+                          justify-center
                         ">
                         <Link 
                           href="/signup" 
@@ -1302,7 +1314,7 @@ const Pricing = () => {
                               px-14
                               lg:px-10
                               xl:px-14
-                              text-[14px]
+                              text-[16px]
                               lg:text-[16px]
                               py-3 
                               rounded-full 

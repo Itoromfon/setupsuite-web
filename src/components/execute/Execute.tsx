@@ -2,15 +2,15 @@ import Image from "next/image"
 
 const Execute = () => {
     return (
-        <div className="bg-[var(--white)]">
+        <div>
             <div>
                 <div 
                     className="
-                        w-[280px]
+                        w-[349px]
                         lg:w-[884px]
                         lg:text-3xl
                         xl:text-5xl
-                        text-[20px]
+                        text-[24px]
                         font-bold
                         text-[var(--hero)]
                         flex 
@@ -31,7 +31,7 @@ const Execute = () => {
                         text-[14px]
                         lg:text-[14px]
                         xl:text-[16px]
-                        w-[280px]
+                        w-[338px]
                         lg:w-[750px]
                         leading-normal
                         mb-[50px]
@@ -68,7 +68,7 @@ const Execute = () => {
                     <h1 
                         className="
                             lg:text-[20px]
-                            text-[17px]
+                            text-[18px]
                             font-black
                             text-[var(--register-event)]
                             lg:w-[269px]
@@ -114,7 +114,7 @@ const Execute = () => {
                     <h1 
                         className="
                             lg:text-[20px]
-                            text-[17px]
+                            text-[18px]
                             font-black
                             text-[var(--register-event)]
                             lg:w-[269px]
@@ -160,7 +160,7 @@ const Execute = () => {
                     <h1 
                         className="
                             lg:text-[20px]
-                            text-[17px]
+                            text-[18px]
                             font-black
                             text-[var(--register-event)]
                             lg:w-[269px]
@@ -219,7 +219,7 @@ const Execute = () => {
                     <h1 
                         className="
                             lg:text-[20px]
-                            text-[17px]
+                            text-[18px]
                             font-black
                             text-[var(--register-event)]
                             lg:w-[269px]
@@ -266,7 +266,7 @@ const Execute = () => {
                     <h1 
                         className="
                             lg:text-[20px]
-                            text-[17px]
+                            text-[18px]
                             font-black
                             text-[var(--register-event)]
                             lg:w-[269px]
@@ -313,7 +313,7 @@ const Execute = () => {
                     <h1 
                         className="
                             lg:text-[20px]
-                            text-[17px]
+                            text-[18px]
                             font-black
                             text-[var(--register-event)]
                             lg:w-[269px]

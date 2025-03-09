@@ -6,7 +6,7 @@ import Pricing from "@/components/pricing/Pricing";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[var(--background)]">
       <Navbar />
       <Hero />
       <Features />
