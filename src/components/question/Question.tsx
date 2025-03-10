@@ -2,6 +2,9 @@ import { useState } from "react";
 import { Minus } from "@phosphor-icons/react";
 import { Plus } from "@phosphor-icons/react";
 
+// Define the type for the keys of expandedStates
+type QuestionKey = "features" | "events" | "system" | "multipleEvents" | "qrCode";
+
 const Question = () => {
   // State to track the expansion state of each question independently
   const [expandedStates, setExpandedStates] = useState({
@@ -13,7 +16,7 @@ const Question = () => {
   });
 
   // Toggle function to show/hide answer for a specific question
-  const toggleAnswer = (question) => {
+  const toggleAnswer = (question: QuestionKey) => {
     setExpandedStates((prevStates) => ({
       ...prevStates,
       [question]: !prevStates[question],
