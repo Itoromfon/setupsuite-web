@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ManagePrice from "../manageprice/ManagePrice";
 
 const Pricing = () => {
   // State to track whether the toggle is set to "Monthly" or "Yearly"
@@ -13,6 +14,7 @@ const Pricing = () => {
 
   return (
     <div
+      id="pricing"
       className="
         bg-[linear-gradient(180deg,#F2EFEB_0%,#1ABC9C_100%,#8FE3D2_100%)]
         w-full
@@ -1338,7 +1340,12 @@ const Pricing = () => {
                 </div>
                 </>
           )}
+          
         </div>
+        {/* Manage Price Section */}
+        <div>
+            <ManagePrice />
+          </div>
     </div>
   );
 };

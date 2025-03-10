@@ -5,13 +5,20 @@ import { PlayCircle } from "@phosphor-icons/react";
 const Hero = () => {
     return (
     <>
-    <div className="hidden xl:block">
+    <div 
+        id="home"
+        className="
+            hidden 
+            xl:block
+        ">
         <div 
             className="
+                bg-[var(--background)]
                 flex 
                 pt-[120px]
-                justify-between
-                mx-[50px]
+                lg:justify-around
+                xl:justify-around
+                px-[50px]
             "
             >
                 <div>
@@ -131,8 +138,10 @@ const Hero = () => {
         <div 
             className="
                 flex 
-                justify-between
+                lg:justify-around
+                xl:justify-around
                 mx-[50px]
+                mt-[30px]
             ">
             <div className="flex">
                 <div className="mt-[8px]">
@@ -308,11 +317,15 @@ const Hero = () => {
     </div>
 
     {/* For Mobile responsiveness */}
+    <div>
     <div 
         className="
             block 
+            lg:hidden
             xl:hidden
             pt-[110px]
+            pb-[80px] 
+            bg-[var(--background)] 
         "
         >
         <div 
@@ -470,12 +483,15 @@ const Hero = () => {
                 />
             </div>
         </div>
+    </div>
+    <div>
             <div 
                 className="
                     flex
                     justify-center
                     lg:justify-around
-                    
+                    lg:hidden
+                    xl:hidden
                     mt-[50px]
                     mb-[25px]
                 "
@@ -497,7 +513,11 @@ const Hero = () => {
                         height={53}
                     />
                 </div>
-                <div className="ml-[3px] lg:ml-[12px]">
+                <div 
+                    className="
+                        ml-[3px] 
+                        lg:ml-[12px]
+                    ">
                     <h1 
                         className="
                         font-black
@@ -598,6 +618,8 @@ const Hero = () => {
                     flex
                     justify-center
                     lg:justify-around
+                    lg:hidden
+                    xl:hidden
                 "
             >
             <div className="flex">
@@ -707,6 +729,7 @@ const Hero = () => {
                         Prevent overcrowding, enhance engagement, and create a safe, organized event.
                     </p>
                 </div>
+            </div>
             </div>
             </div>
     </div>

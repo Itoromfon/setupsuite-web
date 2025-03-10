@@ -5,8 +5,8 @@ import Link from "next/link";
 
 const Features = () => {
     return (
-        <div>
-        <div className="mt-[80px] mx-[50px]">
+        <div id="features">
+        <div className="lg:mt-[80px] mt-[10px] mx-[50px]">
             <div 
                 className="
                     lg:text-3xl
@@ -30,8 +30,8 @@ const Features = () => {
                     lg:flex-row
                     justify-center
                     items-center
-                    lg:justify-between
-                    xl:justify-between
+                    lg:justify-around
+                    xl:justify-around
                 ">
             <div>
                 <div 
@@ -132,7 +132,7 @@ const Features = () => {
                 items-center
               ">
                 <Image 
-                  src="/images/womenfun.svg"
+                  src="/images/champagne.svg"
                   alt="Setup-suite Logo"
                   width={541}
                   height={583}
@@ -148,8 +148,8 @@ const Features = () => {
                     lg:flex-row
                     justify-center
                     items-center
-                    lg:justify-between
-                    xl:justify-between
+                    lg:justify-around
+                    xl:justify-around
                     mt-[30px]
                     lg:mt-[100px]
                     xl:mt-[100px]
@@ -162,7 +162,7 @@ const Features = () => {
                 items-center
               ">
                 <Image 
-                  src="/images/photographer.svg"
+                  src="/images/seamlesscheck.svg"
                   alt="Setup-suite Logo"
                   width={541}
                   height={583}
@@ -267,8 +267,8 @@ const Features = () => {
                     lg:flex-row
                     justify-center
                     items-center
-                    lg:justify-between
-                    xl:justify-between
+                    lg:justify-around
+                    xl:justify-around
                     mt-[30px]
                     lg:mt-[100px]
                     xl:mt-[100px]
@@ -369,7 +369,7 @@ const Features = () => {
                 items-center
               ">
                 <Image 
-                  src="/images/smartvendor.svg"
+                  src="/images/logistics.svg"
                   alt="Setup-suite Logo"
                   width={541}
                   height={583}

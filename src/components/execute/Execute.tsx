@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const Execute = () => {
     return (
-        <div>
+        <div id="executes">
             <div>
                 <div 
                     className="
@@ -52,16 +52,17 @@ const Execute = () => {
                     items-center
                     lg:justify-center
                     xl:justify-center
-                    gap-[20px]
+                    lg:gap-[20px]
                 "
             >
             <div 
                 className="
-                    shadow-xl
+                    shadow-2xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
-                    mb-12
+                    lg:mb-12
+                    mb-3
                 "
             >
                 <div>
@@ -103,11 +104,12 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-xl
+                    shadow-2xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
-                    mb-12
+                    lg:mb-12
+                    mb-3
                 "
             >
                 <div>
@@ -149,11 +151,12 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-xl
+                    shadow-2xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
-                    mb-12
+                    lg:mb-12
+                    mb-3
                 "
             >
                 <div>
@@ -203,16 +206,17 @@ const Execute = () => {
                     items-center
                     lg:justify-center
                     xl:justify-center
-                    gap-[20px]
+                    lg:gap-[20px]
                 "
             >
             <div 
                 className="
-                    shadow-xl
+                    shadow-2xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
-                    mb-12
+                    lg:mb-12
+                    mb-3
                 "
             >
                 <div>
@@ -255,11 +259,12 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-xl
+                    shadow-2xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
-                    mb-12
+                    lg:mb-12
+                    mb-3
                 "
             >
                 <div>
@@ -302,11 +307,12 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-xl
+                    shadow-2xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
-                    mb-12
+                    lg:mb-12
+                    mb-3
                 "
             >
                 <div>
