@@ -227,7 +227,6 @@ const Footer = () => {
         </div>
       </div>
 
-
       {/* Mobile Footer */}
       <div
         className="
@@ -238,7 +237,7 @@ const Footer = () => {
           px-[10px]
         "
       >
-        <div className="flex flex-col items-center text-center">
+        <div className="flex flex-col mx-auto max-w-[358px] text-left">
           {/* Logo and Brand Name */}
           <div className="flex items-center mb-[20px]">
             <div className="mr-2">
@@ -268,7 +267,7 @@ const Footer = () => {
               text-left
               text-[var(--white)]
               mb-[30px]
-              max-w-[358px]
+              w-full
             "
           >
             Plan, manage, and execute unforgettable events with ease. From
@@ -294,8 +293,8 @@ const Footer = () => {
           </div>
 
           {/* Subscription Section */}
-          <div className="mb-[30px] w-full max-w-[358px]">
-            <div className="font-bold mb-[20px] text-[var(--play)] text-[20px]">
+          <div className="mb-[30px] w-full">
+            <div className="font-bold mb-[20px] text-left text-[var(--play)] text-[20px]">
               Stay ahead of the game!
             </div>
             <div className="text-[14px] lg:text-[16px] text-left text-[var(--white)] mb-[20px]">
@@ -319,7 +318,7 @@ const Footer = () => {
           </div>
 
           {/* Navigation Links with Icons and Collapsible Sections */}
-          <div className="flex flex-col gap-[30px] w-full max-w-[358px]">
+          <div className="flex flex-col gap-[30px] w-full">
             {/* Product Section */}
             <div>
               <div
@@ -424,7 +423,7 @@ const Footer = () => {
 
           {/* Copyright and Social Media */}
           <div className="mt-[30px]">
-            <div className="flex mb-[20px] justify-center gap-4">
+            <div className="flex mb-[20px] justify-start gap-4">
               <Link href="#">
                 <Image
                   src="./images/Facebook.svg"
@@ -441,7 +440,7 @@ const Footer = () => {
                   height={15}
                 />
               </Link>
-              <Link  href="#">
+              <Link href="#">
                 <Image
                   src="./images/Instagram.svg"
                   alt="Instagram"
@@ -466,7 +465,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <div className="text-[16px] text-[var(--white)]">
+            <div className="text-[16px] text-[var(--white)] text-left">
               Copyright © 2025 setup suite | All Rights Reserved
             </div>
           </div>

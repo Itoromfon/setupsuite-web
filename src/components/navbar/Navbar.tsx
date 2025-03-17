@@ -11,7 +11,7 @@ import Pricing from '../pricing/Pricing';
 import Question from '../question/Question';
 import Footer from '../footer/Footer';
 
-// Add these CSS styles at the top of your file or in a separate CSS module
+// Updated CSS styles with animated underline
 const styles = `
   .animate-section {
     opacity: 0;
@@ -38,11 +38,36 @@ const styles = `
       transform: scale(1);
     }
   }
+
+  .nav-link {
+    position: relative;
+    padding-bottom: 4px;
+  }
+
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--play);
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-link:hover::after {
+    width: 80%;
+  }
+
+  .nav-link.active::after {
+    width: 100%;
+  }
 `;
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero'); // Track active section
   const [animatedSections, setAnimatedSections] = useState({
     hero: false,
     features: false,
@@ -65,14 +90,15 @@ const Navbar = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setActiveSection(sectionId); // Update active section
     setIsMenuOpen(false);
   };
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setActiveSection('hero'); // Reset to hero when scrolling to top
   };
 
-  // Intersection Observer for animations
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -83,19 +109,19 @@ const Navbar = () => {
               ...prev,
               [sectionId]: true,
             }));
+            // Update active section based on visibility
+            setActiveSection(sectionId);
           }
         });
       },
-      { threshold: 0.2 } // Trigger when 20% of section is visible
+      { threshold: 0.2 }
     );
 
-    // Observe all sections
     if (heroRef.current) observer.observe(heroRef.current);
     if (featuresRef.current) observer.observe(featuresRef.current);
     if (pricingRef.current) observer.observe(pricingRef.current);
     if (contactRef.current) observer.observe(contactRef.current);
 
-    // Cleanup
     return () => {
       if (heroRef.current) observer.unobserve(heroRef.current);
       if (featuresRef.current) observer.unobserve(featuresRef.current);
@@ -104,7 +130,6 @@ const Navbar = () => {
     };
   }, []);
 
-  // Scroll handler for back-to-top button
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 100);
@@ -113,7 +138,6 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Add this useEffect to trigger hero animation on mount
   useEffect(() => {
     setAnimatedSections((prev) => ({ ...prev, hero: true }));
   }, []);
@@ -171,25 +195,25 @@ const Navbar = () => {
             <div className="hidden lg:block space-x-16">
               <button 
                 onClick={() => scrollToSection('hero')}
-                className={`text-[var(--primary)] text-base relative ${pathname === '/' ? 'active' : ''}`}
+                className="text-[var(--primary)] text-base cursor-pointer nav-link"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection('features')}
-                className="text-[var(--primary)] text-base"
+                className="text-[var(--primary)] text-base cursor-pointer nav-link"
               >
                 Features
               </button>
               <button 
                 onClick={() => scrollToSection('pricing')}
-                className="text-[var(--primary)] text-base cursor-pointer"
+                className="text-[var(--primary)] text-base cursor-pointer nav-link"
               >
                 Pricing
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
-                className="text-[var(--primary)] text-base"
+                className="text-[var(--primary)] text-base cursor-pointer nav-link"
               >
                 Contact us
               </button>
@@ -198,7 +222,15 @@ const Navbar = () => {
             <div className="hidden md:flex items-center space-x-4">
               <Link 
                 href="/#" 
-                className="text-[var(--primary)] text-base hover:text-gray-900 transition duration-300"
+                className="
+                  text-[var(--primary)] 
+                  text-base 
+                  hover:text-gray-900 
+                  transition 
+                  duration-300
+                  cursor-pointer
+                  nav-link
+                "
               >
                 Sign In
               </Link>
@@ -259,25 +291,33 @@ const Navbar = () => {
               <div className="flex flex-col items-left mt-[-190px] space-y-10">
                 <button 
                   onClick={() => scrollToSection('hero')}
-                  className={`text-[var(--primary)] text-[14px] font-semibold hover:text-gray-900 flex pl-6 justify-start text-left ${pathname === '/' ? 'bg-[var(--border-bottom)] text-white rounded-lg w-[360px] py-2' : ''}`}
+                  className={`text-[var(--primary)] text-[14px] cursor-pointer font-semibold hover:text-gray-900 flex pl-6 justify-start text-left ${
+                    activeSection === 'hero' ? 'bg-[var(--border-bottom)] text-white rounded-lg w-[360px] py-2' : ''
+                  }`}
                 >
                   Home
                 </button>
                 <button 
                   onClick={() => scrollToSection('features')}
-                  className={`text-[var(--primary)] text-[14px] font-semibold hover:text-gray-900 flex pl-6 justify-start text-left`}
+                  className={`text-[var(--primary)] text-[14px] cursor-pointer font-semibold hover:text-gray-900 flex pl-6 justify-start text-left ${
+                    activeSection === 'features' ? 'bg-[var(--border-bottom)] text-white rounded-lg w-[360px] py-2' : ''
+                  }`}
                 >
                   Features
                 </button>
                 <button 
                   onClick={() => scrollToSection('pricing')}
-                  className={`text-[var(--primary)] text-[14px] font-semibold hover:text-gray-900 flex pl-6 justify-start text-left`}
+                  className={`text-[var(--primary)] text-[14px] cursor-pointer font-semibold hover:text-gray-900 flex pl-6 justify-start text-left ${
+                    activeSection === 'pricing' ? 'bg-[var(--border-bottom)] text-white rounded-lg w-[360px] py-2' : ''
+                  }`}
                 >
                   Pricing
                 </button>
                 <button 
                   onClick={() => scrollToSection('contact')}
-                  className={`text-[var(--primary)] text-[14px] font-semibold hover:text-gray-900 flex pl-6 justify-start text-left`}
+                  className={`text-[var(--primary)] text-[14px] cursor-pointer font-semibold hover:text-gray-900 flex pl-6 justify-start text-left ${
+                    activeSection === 'contact' ? 'bg-[var(--border-bottom)] text-white rounded-lg w-[360px] py-2' : ''
+                  }`}
                 >
                   Contact us
                 </button>
@@ -287,7 +327,6 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* Animated Sections */}
       <div id="hero" ref={heroRef} className={`pt-1 ${animatedSections.hero ? 'hero-animate' : ''}`}>
         <Hero />
       </div>
@@ -302,7 +341,6 @@ const Navbar = () => {
 
       <Execute />
       
-
       <div 
         id="pricing" 
         ref={pricingRef} 
@@ -324,7 +362,7 @@ const Navbar = () => {
       {showScrollTop && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 bg-[var(--foreground)] text-[var(--white)] p-3 rounded-full shadow-lg hover:bg-[var(--border-bottom)] transition-colors duration-300 z-50"
+          className="fixed cursor-pointer bottom-5 right-5 bg-[var(--foreground)] text-[var(--white)] p-3 rounded-full shadow-lg hover:bg-[var(--border-bottom)] transition-colors duration-300 z-50"
         >
           <svg 
             xmlns="http://www.w3.org/2000/svg" 
