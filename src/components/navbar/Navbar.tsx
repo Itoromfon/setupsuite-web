@@ -75,7 +75,7 @@ const Navbar = () => {
     contact: false,
   });
 
-  const pathname = usePathname();
+  // const pathname = usePathname();
   const heroRef = useRef(null);
   const featuresRef = useRef(null);
   const pricingRef = useRef(null);
