@@ -57,7 +57,7 @@ const Execute = () => {
             >
             <div 
                 className="
-                    shadow-2xl
+                    shadow-xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
@@ -104,7 +104,7 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-2xl
+                    shadow-xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
@@ -151,7 +151,7 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-2xl
+                    shadow-xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
@@ -211,7 +211,7 @@ const Execute = () => {
             >
             <div 
                 className="
-                    shadow-2xl
+                    shadow-xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
@@ -259,7 +259,7 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-2xl
+                    shadow-xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8
@@ -307,7 +307,7 @@ const Execute = () => {
             </div>
             <div 
                 className="
-                    shadow-2xl
+                    shadow-xl
                     bg-[var(--white)]
                     w-[315px]
                     py-8

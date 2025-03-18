@@ -24,11 +24,12 @@ const Pricing = () => {
         items-center
         justify-center
         py-12
-        mt-[150px]
+        mt-[50px]
+        lg:mt-[50px]
       "
     >
       <div className="flex text-center">
-        <div className="lg:mt-[-110px] mt-[-90px]">
+        <div className="lg:mt-[100px] mt-[80px]">
         <h1 
             className="
                 text-[20px]
@@ -46,13 +47,13 @@ const Pricing = () => {
         
         </div>
         {/* Toggle Switch */}
-        <div className="mt-[-100px]">
+        <div className="lg:mt-[110px] mt-[80px]">
         <div className=" mb-12">
           <div className="relative flex items-center bg-white lg:w-[200px] rounded-full shadow-md">
             {/* Monthly Button */}
             <button
               onClick={handleToggle}
-              className={`lg:px-6 px-2 py-2 rounded-full text-[12px] font-semibold transition-colors duration-300 ${
+              className={`lg:px-6 px-2 py-2 cursor-pointer rounded-full text-[12px] font-semibold transition-colors duration-300 ${
                 !isYearly
                   ? "bg-black text-white"
                   : "bg-white text-black hover:bg-gray-100"
@@ -63,7 +64,7 @@ const Pricing = () => {
             {/* Yearly Button */}
             <button
               onClick={handleToggle}
-              className={`px-6 py-2 rounded-full text-[12px] font-semibold transition-colors duration-300 ${
+              className={`px-6 py-2 cursor-pointer rounded-full text-[12px] font-semibold transition-colors duration-300 ${
                 isYearly
                   ? "bg-black text-white"
                   : "bg-white text-black hover:bg-gray-100"
@@ -130,7 +131,7 @@ const Pricing = () => {
                           <span 
                             className="
                               text-[var(--greyadd)]
-                              ml-4
+                              ml-2
                               font-medium
                               lg:text-[17px] 
                               text-[17px]
@@ -299,7 +300,7 @@ const Pricing = () => {
                           <span 
                             className="
                               text-[var(--greyadd)]
-                              ml-4
+                              ml-2
                               font-medium
                               lg:text-[17px] 
                               text-[17px]
@@ -506,7 +507,7 @@ const Pricing = () => {
                           <span 
                             className="
                               text-[var(--greyadd)]
-                              ml-4
+                              ml-2
                               font-medium
                               lg:text-[17px] 
                               text-[17px]
@@ -753,7 +754,7 @@ const Pricing = () => {
                           <span 
                             className="
                               text-[var(--greyadd)]
-                              ml-4
+                              ml-2
                               font-medium
                               lg:text-[17px] 
                               text-[17px]
@@ -922,7 +923,7 @@ const Pricing = () => {
                           <span 
                             className="
                               text-[var(--greyadd)]
-                              ml-4
+                              ml-2
                               font-medium
                               lg:text-[17px] 
                               text-[17px]
@@ -1129,7 +1130,7 @@ const Pricing = () => {
                           <span 
                             className="
                               text-[var(--greyadd)]
-                              ml-4
+                              ml-2
                               font-medium
                               lg:text-[17px] 
                               text-[17px]

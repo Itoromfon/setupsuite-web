@@ -51,81 +51,89 @@ const Question = () => {
           gap-2
         "
       >
-        <div
+      <div
+        className="
+          flex
+          justify-center
+          shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
+          bg-white          
+          w-[380px]
+          lg:w-[558px]
+          rounded-[4.91px]
+          px-2
+          lg:px-7
+          py-10
+          mb-[15px]
+          lg:mb-[0]
+        "
+      >
+      <div className="flex items-center">
+        {expandedStates.features ? (
+          <Minus
+            size={22}
+            className="
+              text-[var(--play)]
+              mt-[-120px]
+            "
+            onClick={() => toggleAnswer("features")}
+          />
+        ) : (
+          <Plus
+            size={22}
+            className="
+              text-[var(--play)]
+            "
+            onClick={() => toggleAnswer("features")}
+          />
+        )}
+      </div>
+      <div className="ml-5">
+        <h1
           className="
-            flex
-            justify-center
-            shadow-2xl
-            w-[380px]
-            lg:w-[558px]
-            px-2
-            lg:px-7
-            py-10
+            lg:text-[18px]
+            text-[16px]
+            text-[var(--question)]
+            font-medium
+            lg:w-[438px]
+            w-[306px]
           "
         >
-          <div className="flex items-center">
-            {expandedStates.features ? (
-              <Minus
-                size={22}
-                className="
-                  text-[var(--play)]
-                  mt-[-100px]
-                "
-                onClick={() => toggleAnswer("features")}
-              />
-            ) : (
-              <Plus
-                size={22}
-                className="
-                  text-[var(--play)]
-                "
-                onClick={() => toggleAnswer("features")}
-              />
-            )}
-          </div>
-          <div className="ml-5">
-            <h1
-              className="
-                lg:text-[18px]
-                text-[16px]
-                text-[var(--question)]
-                font-medium
-                lg:w-[438px]
-                w-[306px]
-              "
-            >
-              What are the key features of Setup Suite?
-            </h1>
-            {expandedStates.features && (
-              <p
-                className="
-                  lg:text-[15px]
-                  text-[14px]
-                  font-normal
-                  lg:w-[442px]
-                  w-[306px]
-                  text-[var(--greyadd)]
-                  mt-[20px]
-                "
-              >
-                Setup Suite offers a complete event management solution,
-                including seamless event registration, automated check-ins, guest
-                list management, vendor coordination, real-time analytics, and
-                onsite accreditation.
-              </p>
-            )}
-          </div>
-        </div>
+          What are the key features of Setup Suite?
+        </h1>
+        {expandedStates.features && (
+          <p
+            className="
+              lg:text-[15px]
+              text-[14px]
+              font-normal
+              lg:w-[442px]
+              w-[306px]
+              text-[var(--greyadd)]
+              mt-[20px]
+            "
+          >
+            Setup Suite offers a complete event management solution,
+            including seamless event registration, automated check-ins, guest
+            list management, vendor coordination, real-time analytics, and
+            onsite accreditation.
+          </p>
+        )}
+      </div>
+    </div>
         <div
           className="
             flex
             justify-center
-            shadow-2xl
+            shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
+            bg-white    
+            rounded-[4.91px] 
             w-[380px]
             lg:w-[558px]
             px-2
             lg:px-7
-            py-10
+            py-13
+            mb-[15px]
+            lg:mb-[0]
           "
         >
           <div className="flex items-center">
@@ -134,7 +142,8 @@ const Question = () => {
                 size={22}
                 className="
                   text-[var(--play)]
-                  mt-[-100px]
+                  lg:mt-[-95px]
+                  mt-[-110px]
                 "
                 onClick={() => toggleAnswer("events")}
               />
@@ -207,15 +216,17 @@ const Question = () => {
             className="
               flex
               justify-center
-              shadow-2xl
+              shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
+              bg-white    
+              rounded-[4.91px] 
               w-[380px]
               lg:w-[558px]
               px-2
               lg:px-7
               lg:py-9
               py-6
-              lg:mb-2
-              mb-1
+              lg:mb-5
+              mb-[25px]
             "
           >
             <div className="flex items-center">
@@ -275,15 +286,17 @@ const Question = () => {
             className="
               flex
               justify-center
-              shadow-2xl
+              shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
+              bg-white    
+              rounded-[4.91px] 
               w-[380px]
               lg:w-[558px]
               px-2
               lg:px-7
               lg:py-9
               py-6
-              lg:mb-2
-              mb-1
+              lg:mb-5
+              mb-[15px]
             "
           >
             <div className="flex items-center">
@@ -343,7 +356,9 @@ const Question = () => {
           className="
             flex
             justify-center
-            shadow-2xl
+            shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
+            bg-white    
+            rounded-[4.91px] 
             w-[380px]
             lg:w-[558px]
             px-2
@@ -357,7 +372,8 @@ const Question = () => {
                 size={22}
                 className="
                   text-[var(--play)]
-                  mt-[-100px]
+                  lg:mt-[-120px]
+                  mt-[-150px]
                 "
                 onClick={() => toggleAnswer("system")}
               />

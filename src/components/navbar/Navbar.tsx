@@ -152,7 +152,12 @@ const Navbar = () => {
               <div className="lg:hidden">
                 <button 
                   onClick={toggleMenu}
-                  className="text-[var(--greyadd)] hover:text-gray-900 focus:outline-none cursor-pointer"
+                  className="
+                    text-[var(--greyadd)] 
+                    focus:outline-none 
+                    cursor-pointer
+                    mt-[8px]
+                  "
                 >
                   <svg 
                     className="h-6 w-6" 
@@ -180,7 +185,7 @@ const Navbar = () => {
                 </button>
               </div>
               <div className="w-[118px] md:w-[182px] flex items-center">
-                <Link className="ml-[-6px]" href="/">
+                <Link className="ml-[-3px]" href="/">
                   <Image 
                     src="/images/setup.svg"
                     alt="Setup-suite Logo"

@@ -423,7 +423,7 @@ const Footer = () => {
 
           {/* Copyright and Social Media */}
           <div className="mt-[30px]">
-            <div className="flex mb-[20px] justify-start gap-4">
+            <div className="flex mb-[20px] justify-center gap-4">
               <Link href="#">
                 <Image
                   src="./images/Facebook.svg"
@@ -465,7 +465,7 @@ const Footer = () => {
                 />
               </Link>
             </div>
-            <div className="text-[16px] text-[var(--white)] text-left">
+            <div className="text-[16px] text-[var(--white)] text-center">
               Copyright © 2025 setup suite | All Rights Reserved
             </div>
           </div>
