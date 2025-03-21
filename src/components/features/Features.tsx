@@ -130,7 +130,7 @@ const Features = () => {
             </div>
             <div className="w-[369px] lg:w-[541px] flex items-center">
               <Image 
-                src="/images/champagne.svg"
+                src="/images/drinks.png"
                 alt="Event registration illustration"
                 width={541}
                 height={583}
@@ -157,7 +157,7 @@ const Features = () => {
           >
             <div className="w-[369px] lg:w-[541px] flex items-center">
               <Image 
-                src="/images/seamlesscheck.svg"
+                src="/images/hall.png"
                 alt="Event control illustration"
                 width={541}
                 height={583}
@@ -352,7 +352,7 @@ const Features = () => {
             </div>
             <div className="w-[369px] lg:w-[541px] flex items-center">
               <Image 
-                src="/images/logistics.svg"
+                src="/images/food.png"
                 alt="Logistics management illustration"
                 width={541}
                 height={583}

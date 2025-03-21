@@ -22,7 +22,7 @@ const ManagePrice = () => {
                     "
                 >
                     <Image 
-                        src="/images/handleevent.svg"
+                        src="/images/handleevent.png"
                         alt="Managge event"
                         width={547}
                         height={483}
@@ -101,7 +101,7 @@ const ManagePrice = () => {
                     "
                 >
                     <Image 
-                        src="/images/audience.svg"
+                        src="/images/audience.png"
                         alt="Managge event"
                         width={547}
                         height={483}

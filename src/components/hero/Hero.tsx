@@ -29,10 +29,10 @@ const Hero = () => {
         >
           <div>
             <Image 
-              src="/images/ellipse1398.svg"
+              src="/images/groupleft.png"
               alt="Decorative ellipse"
-              width={296}
-              height={757}
+              width={292}
+              height={750}
               priority // Preload this image as it's above the fold
               placeholder="blur" // Add blur effect while loading
               blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mN8/+F9PQAI+wN4B5XJggAAAABJRU5ErkJggg==" // Simple gray placeholder
@@ -123,7 +123,7 @@ const Hero = () => {
           </div>
           <div>
             <Image 
-              src="/images/ellipse1498.svg"
+              src="/images/groupright.png"
               alt="Decorative ellipse"
               width={296}
               height={757}
@@ -146,7 +146,7 @@ const Hero = () => {
           <div className="flex">
             <div className="mt-[8px]">
               <Image 
-                src="/images/seam.svg"
+                src="/images/seam.png"
                 alt="Seamless feature icon"
                 width={53}
                 height={53}
@@ -169,7 +169,7 @@ const Hero = () => {
           <div className="flex">
             <div className="mt-[8px]">
               <Image 
-                src="/images/sma.svg"
+                src="/images/smart.png"
                 alt="Smart feature icon"
                 width={53}
                 height={53}
@@ -192,7 +192,7 @@ const Hero = () => {
           <div className="flex">
             <div className="mt-[8px]">
               <Image 
-                src="/images/seam.svg"
+                src="/images/seam.png"
                 alt="Stress-free feature icon"
                 width={53}
                 height={53}
@@ -215,7 +215,7 @@ const Hero = () => {
           <div className="flex">
             <div className="mt-[8px]">
               <Image 
-                src="/images/sma.svg"
+                src="/images/smart.png"
                 alt="Crowd control feature icon"
                 width={53}
                 height={53}
@@ -246,7 +246,7 @@ const Hero = () => {
           <div className="flex justify-between mx-[50px]">
             <div>
               <Image 
-                src="/images/ellipsegroup.svg"
+                src="/images/mobile1.png"
                 alt="Decorative ellipse group"
                 width={75}
                 height={54}
@@ -258,7 +258,7 @@ const Hero = () => {
             </div>
             <div>
               <Image 
-                src="/images/ellipsegroup1871.svg"
+                src="/images/mobile3.png"
                 alt="Decorative ellipse group"
                 width={75}
                 height={55}
@@ -362,7 +362,7 @@ const Hero = () => {
           <div className="flex justify-between mx-[50px] mt-[60px]">
             <div>
               <Image 
-                src="/images/swagcall.svg"
+                src="/images/mobile2.png"
                 alt="Decorative swag"
                 width={75}
                 height={54}
@@ -374,7 +374,7 @@ const Hero = () => {
             </div>
             <div>
               <Image 
-                src="/images/fashion.svg"
+                src="/images/mobile4.png"
                 alt="Decorative fashion"
                 width={75}
                 height={55}
@@ -391,7 +391,7 @@ const Hero = () => {
             <div className="flex">
               <div className="mt-[8px] w-[29px] md:w-[53px]">
                 <Image 
-                  src="/images/seam.svg"
+                  src="/images/seam.png"
                   alt="Seamless feature icon"
                   width={53}
                   height={53}
@@ -416,7 +416,7 @@ const Hero = () => {
             <div className="flex">
               <div className="mt-[8px] w-[29px] md:w-[53px]">
                 <Image 
-                  src="/images/sma.svg"
+                  src="/images/smart.png"
                   alt="Smart feature icon"
                   width={53}
                   height={53}
@@ -441,7 +441,7 @@ const Hero = () => {
             <div className="flex">
               <div className="mt-[8px] w-[29px] md:w-[53px]">
                 <Image 
-                  src="/images/sma.svg"
+                  src="/images/smart.png"
                   alt="Stress-free feature icon"
                   width={53}
                   height={53}
@@ -464,7 +464,7 @@ const Hero = () => {
             <div className="flex">
               <div className="mt-[8px] w-[29px] md:w-[53px]">
                 <Image 
-                  src="/images/seam.svg"
+                  src="/images/seam.png"
                   alt="Crowd control feature icon"
                   width={53}
                   height={53}
