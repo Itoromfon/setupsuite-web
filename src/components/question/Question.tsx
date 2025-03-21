@@ -57,7 +57,7 @@ const Question = () => {
           justify-center
           shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
           bg-white          
-          w-[380px]
+          w-[350px]
           lg:w-[558px]
           rounded-[4.91px]
           px-2
@@ -87,7 +87,7 @@ const Question = () => {
           />
         )}
       </div>
-      <div className="ml-5">
+      <div className="ml-4">
         <h1
           className="
             lg:text-[18px]
@@ -127,7 +127,7 @@ const Question = () => {
             shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
             bg-white    
             rounded-[4.91px] 
-            w-[380px]
+            w-[350px]
             lg:w-[558px]
             px-2
             lg:px-7
@@ -157,7 +157,7 @@ const Question = () => {
               />
             )}
           </div>
-          <div className="ml-5">
+          <div className="ml-4">
             <h1
               className="
                 lg:text-[18px]
@@ -219,7 +219,7 @@ const Question = () => {
               shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
               bg-white    
               rounded-[4.91px] 
-              w-[380px]
+              w-[350px]
               lg:w-[558px]
               px-2
               lg:px-7
@@ -249,7 +249,7 @@ const Question = () => {
                 />
               )}
             </div>
-            <div className="ml-5">
+            <div className="ml-4">
               <h1
                 className="
                   lg:text-[18px]
@@ -289,7 +289,7 @@ const Question = () => {
               shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
               bg-white    
               rounded-[4.91px] 
-              w-[380px]
+              w-[350px]
               lg:w-[558px]
               px-2
               lg:px-7
@@ -319,7 +319,7 @@ const Question = () => {
                 />
               )}
             </div>
-            <div className="ml-5">
+            <div className="ml-4">
               <h1
                 className="
                   lg:text-[18px]
@@ -359,7 +359,7 @@ const Question = () => {
             shadow-[0_4px_6px_rgba(0,0,0,0.1),0_-4px_6px_rgba(0,0,0,0.1)]
             bg-white    
             rounded-[4.91px] 
-            w-[380px]
+            w-[350px]
             lg:w-[558px]
             px-2
             lg:px-7
@@ -387,7 +387,7 @@ const Question = () => {
               />
             )}
           </div>
-          <div className="ml-5">
+          <div className="ml-4">
             <h1
               className="
                 lg:text-[18px]
