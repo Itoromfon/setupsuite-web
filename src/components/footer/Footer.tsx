@@ -310,7 +310,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="bg-[var(--foreground)] font-medium px-4 text-[var(--white)] p-[10px] rounded-xl hover:bg-[var(--play-dark)] transition duration-200"
+                className="bg-[var(--foreground)] font-medium text-[var(--white)] p-[8px] rounded-xl hover:bg-[var(--play-dark)] transition duration-200"
               >
                 Subscribe
               </button>
