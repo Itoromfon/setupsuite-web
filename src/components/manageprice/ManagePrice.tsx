@@ -16,7 +16,7 @@ const ManagePrice = () => {
             <div>
                 <div 
                     className="
-                        w-[359px]
+                        w-[352px]
                         lg:w-[547px]
                         xl:w-[547px]
                     "
@@ -95,7 +95,7 @@ const ManagePrice = () => {
             <div>
                 <div 
                     className="
-                        w-[359px]
+                        w-[352px]
                         lg:w-[547px]
                         xl:w-[547px]
                     "
